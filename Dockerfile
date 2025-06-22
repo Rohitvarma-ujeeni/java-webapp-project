@@ -1,4 +1,4 @@
-FROM tomcat:8.0
-COPY ./target/*.war /usr/local/tomcat/webapps
+FROM tomcat
+COPY /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps
 EXPOSE 8080
 
